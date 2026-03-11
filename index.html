@@ -1,71 +1,135 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>عمق الكلمة</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<title>عمق الكلمة</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family: Tahoma;
+    background:#0b0b0b;
+    color:white;
+    direction:rtl;
+}
+
+header{
+    text-align:center;
+    padding:40px;
+}
+
+header h1{
+    font-size:50px;
+    color:#d4af37;
+}
+
+header p{
+    font-size:20px;
+    color:#ccc;
+}
+
+nav{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-size:18px;
+}
+
+nav a:hover{
+    color:#d4af37;
+}
+
+.container{
+    width:85%;
+    margin:auto;
+}
+
+.posts{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.post{
+    background:#1a1a1a;
+    padding:20px;
+    border-radius:10px;
+}
+
+.post h3{
+    color:#d4af37;
+}
+
+.post p{
+    color:#bbb;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    margin-top:40px;
+    background:#000;
+    color:#aaa;
+}
+
+</style>
 </head>
+
 <body>
-    <!-- الهيدر -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#" class="active">الرئيسية</a></li>
-                <li><a href="#">المقالات</a></li>
-                <li><a href="#">الفنان</a></li>
-                <li><a href="#">التواصل</a></li>
-            </ul>
-        </nav>
-        <h1>عمق الكلمة</h1>
-        <p>بعض الكلمات لا تُقرأ... بل تُشعر.</p>
-        <button onclick="scrollToArticles()">اتره لـحت الحواظر</button>
-    </header>
 
-    <!-- آخر المقالات -->
-    <section id="articles">
-        <h2>آخر المقالات</h2>
-        <div class="articles-container">
-            <div class="article-card">
-                <img src="img1.jpg" alt="الصبر ليس صفنا">
-                <h3>الصبر ليس صفنا</h3>
-                <p>النصر لا يبكا الجميع.</p>
-            </div>
-            <div class="article-card">
-                <img src="img2.jpg" alt="حين يتعب القلب">
-                <h3>حين يتعب القلب</h3>
-                <p>عندما يوعدك القلب، يعدك الصبر.</p>
-            </div>
-            <div class="article-card">
-                <img src="img3.jpg" alt="الحقيقة تظهر وقت الخلاف">
-                <h3>الحقيقة تظهر وقت الخلاف</h3>
-                <p>فيها يتجلى الروح الحقيقية.</p>
-            </div>
-            <div class="article-card">
-                <img src="img4.jpg" alt="بعض الوجع لا يُقال">
-                <h3>بعض الوجع لا يُقال</h3>
-                <p>ودع الصمت الباقي عن كل الكلام.</p>
-            </div>
-            <div class="article-card">
-                <img src="img5.jpg" alt="ليس كل صمت معف">
-                <h3>ليس كل صمت معف</h3>
-                <p>أحيانًا أصمت إحترامًا للنفس.</p>
-            </div>
-        </div>
-    </section>
+<header>
+<h1>عمق الكلمة</h1>
+<p>مدونة يكتبها أبو وعد للخواطر والإلهام</p>
+</header>
 
-    <!-- الفوتر -->
-    <footer>
-        <div class="icons">
-            <a href="#"><img src="facebook.svg" alt="Facebook"></a>
-            <a href="#"><img src="twitter.svg" alt="Twitter"></a>
-            <a href="#"><img src="youtube.svg" alt="YouTube"></a>
-            <a href="#"><img src="instagram.svg" alt="Instagram"></a>
-        </div>
-        <p>© 2022 جميع حقوق عمق الكلمة محفوظة.</p>
-    </footer>
+<nav>
+<a href="#">الرئيسية</a>
+<a href="#">الصبر</a>
+<a href="#">العلاقات</a>
+<a href="#">خواطر</a>
+<a href="#">قصص مؤثرة</a>
+<a href="#">حكم وأقوال</a>
+</nav>
 
-    <script src="script.js"></script>
+<div class="container">
+
+<h2>آخر المقالات</h2>
+
+<div class="posts">
+
+<div class="post">
+<h3>الصبر ليس ضعفًا</h3>
+<p>أحيانًا يكون الصبر هو أقوى رد يمكن أن يقدمه الإنسان.</p>
+</div>
+
+<div class="post">
+<h3>حين يتعب القلب</h3>
+<p>ليس كل ألم يُحكى… بعضه يُفهم من الصمت.</p>
+</div>
+
+<div class="post">
+<h3>الحقيقة تظهر وقت الخلاف</h3>
+<p>في الخلاف تتكشف القلوب والنيات.</p>
+</div>
+
+<div class="post">
+<h3>ليس كل صمت ضعف</h3>
+<p>أحيانًا يكون الصمت احترامًا للنفس.</p>
+</div>
+
+</div>
+
+</div>
+
+<footer>
+© جميع الحقوق محفوظة - عمق الكلمة | أبو وعد
+</footer>
+
 </body>
 </html>
